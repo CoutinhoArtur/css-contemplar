@@ -12,8 +12,21 @@
     /* Container principal vira um grid */
 
 
-    /* Continuar 1ª digitação (Aqui) */
-    
+  .container {
+    display: grid;
+
+    /* Divisão das colunas (uma com 200px, e duas com 1fr(fração) da tela */
+    grid-template-columns: 200px 1fr 1fr;
+
+    grid-template-rows: 60px 1fr 40px;
+
+    grid-template-areas: 
+    "header header header"
+    "sidebar main main"
+    "footer footer footer";
+
+    height: 100vh;
+  }    
 
     /* Cabeçalho ocupa a área "header" */
     header {
